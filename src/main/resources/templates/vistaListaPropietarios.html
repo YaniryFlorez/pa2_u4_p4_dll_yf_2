@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <h6>HOLA MUNDO</h6>
+    
+  <table>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Nombre</th>
+			<th>Apellido</th>
+			<th>Cedula</th>
+		</tr>
+	</thead>
+	<hbody>
+		<tr>th;each="propietario:${propietarios}">
+			<td th:text="${propietarios.id}"></td>
+			<td th:text="${propietarios.nombre}"></td>
+			<td th:text="${propietarios.apellido}"></td>
+			<td th:text="${propietarios.cedula}"></td>
+		</tr>
+	</hbody>
+</table>
+</body>
+
+</html>
